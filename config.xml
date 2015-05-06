@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.dentef.app"
+		versionCode="100"
+		version = "1.0.0">
+		<name>DENTISTAS SC Tenerife</name>
+		<description>
+			COLEGIO OFICIAL  DE DENTISTAS DE SC DE TENERIFE
+		</description>
+		<author href="http://www.creatactil.com"  email="info@creatactil.com">Jose Gines Venazco</author>
+		
+		<gap:config-file platform="ios" parent="CFBundleShortVersionString">
+		<string>100</string>
+		</gap:config-file>
+
+		
+		<preference name="phonegap-version" value="3.7.0" />
+		<preference name="orientation" value="default" />
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="true" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="true" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="true" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="true" />
+		<preference name="MediaPlaybackRequiresUserAction" value="true" />
+		<preference name="AllowInlineMediaPlayback" value="true" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="true" />
+		<preference name="SuppressesIncrementalRendering" value="true" />
+		<preference name="android-minSdkVersion" value="8" />
+		<preference name="android-installLocation" value="internalOnly" />
+		<preference name="SplashScreenDelay" value="8000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value=""/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="true"/>
+		<preference name="LoadingDialog" value=",Cargando....."/> 
+		<preference name="LoadUrlTimeoutValue" value="20000" />
+		<preference name="disable-cursor" value="true" />
+		<gap:platform name="ios" />
+		<feature name="http://api.phonegap.com/1.0/file"/>
+		<feature name="http://api.phonegap.com/1.0/media"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+		<feature name="http://api.phonegap.com/1.0/device"/>
+		
+		
+		<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.4.0" />
+		<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11" />
+		<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
+		<gap:plugin name="org.apache.cordova.console" version="0.2.11" />
+		<gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
+		<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
+		<gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
+		<gap:plugin name="org.apache.cordova.device-orientation" version="0.3.9" />
+		<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+		<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
+		<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+		<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
+		<gap:plugin name="org.apache.cordova.globalization" version="0.3.1" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+		<gap:plugin name="org.apache.cordova.media" version="0.2.13" />
+		<gap:plugin name="org.apache.cordova.media-capture" version="0.3.3" />
+		<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
+		<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+		<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
+		
+				
+		<plugin name="File" value="CDVFile" />
+		<plugin name="FileTransfer" value="CDVFileTransfer" />
+		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
+		<plugin name="Media" value="CDVSound" />
+		<plugin name="Notification" value="CDVNotification" />
+		<plugin name="SplashScreen" value="CDVSplashScreen" />
+		
+		<icon src="imagenes/29.png" gap:platform="ios" width="29" height="29" />
+		<icon src="imagenes/40.png" gap:platform="ios" width="40" height="40" />
+		<icon src="imagenes/50.png" gap:platform="ios" width="50" height="50" />
+		<icon src="imagenes/57.png" gap:platform="ios" width="57" height="57" />
+		<icon src="imagenes/58.png" gap:platform="ios" width="58" height="58" />
+		<icon src="imagenes/60.png" gap:platform="ios" width="60" height="60" />
+		<icon src="imagenes/72.png" gap:platform="ios" width="72" height="72" />
+		<icon src="imagenes/76.png" gap:platform="ios" width="76" height="76" />
+		<icon src="imagenes/80.png" gap:platform="ios" width="80" height="80" />
+		<icon src="imagenes/87.png" gap:platform="ios" width="87" height="87" />
+		<icon src="imagenes/100.png" gap:platform="ios" width="100" height="100" />
+		<icon src="imagenes/114.png" gap:platform="ios" width="114" height="114" />
+		<icon src="imagenes/120.png" gap:platform="ios" width="120" height="120" />
+		<icon src="imagenes/144.png" gap:platform="ios" width="144" height="144" />
+		<icon src="imagenes/152.png" gap:platform="ios" width="152" height="152" />
+		<icon src="imagenes/180.png" gap:platform="ios" width="180" height="180" />
+		<icon src="imagenes/1024.png" gap:platform="ios" width="1024" height="1024" />
+		<icon src="imagenes/2048.png" gap:platform="ios" width="2048" height="2048" />
+		
+		
+		
+		<gap:splash src="splash/320x480.png" gap:platform="ios" width="320" height="480" />
+		<gap:splash src="splash/480x320.png" gap:platform="ios" width="480" height="320" />
+		<gap:splash src="splash/640x960.png" gap:platform="ios" width="640" height="960" />
+		<gap:splash src="splash/960x640.png" gap:platform="ios" width="960" height="640" />
+		<gap:splash src="splash/640x1136.png" gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="splash/1136x640.png" gap:platform="ios" width="1136" height="640" />
+		<gap:splash src="splash/768x1024.png" gap:platform="ios" width="768" height="1024 " />
+		<gap:splash src="splash/1024x768.png" gap:platform="ios" width="1024" height="768" />
+		<gap:splash src="splash/1536x2048.png" gap:platform="ios" width="1536" height="2048" />
+		<gap:splash src="splash/2048x1536.png" gap:platform="ios" width="2048" height="1536" />
+		<gap:splash src="splash/1134x750.png" gap:platform="ios" width="1134" height="750" />
+		<gap:splash src="splash/750x1134.png" gap:platform="ios" width="750" height="1134" />
+		<gap:splash src="splash/1242x2208.png" gap:platform="ios" width="1242" height="2208" />
+		<gap:splash src="splash/2208x1242.png" gap:platform="ios" width="2208" height="1242" />
+		
+		
+		<access origin="*" subdomains="true"  />
+		
+	</widget>
