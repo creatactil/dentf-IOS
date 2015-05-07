@@ -160,7 +160,7 @@ function contador(registro){
 	
 	
 	$.ajax({
-		url: 'http://coftf.micolegioapp.com/php/contador.php',
+		url: 'http://app.dentf.com/php/contador.php',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
@@ -202,7 +202,7 @@ function textofirma4(codigo){
 function descargarArchivo(nombre){
 	
 	            
-                var server = "http://micolegioapp.com/CP/web/files/"
+                var server = "http://dentef.com/files/";
                 var filename = nombre;
                 var uri = encodeURI(server + filename);
                 
@@ -214,7 +214,7 @@ function descargarArchivo(nombre){
                     
                     // alert("got filesystem");
 
-                    fileSystem.root.getDirectory('COFTF',
+                    fileSystem.root.getDirectory('DENTF',
                         { create:true },
                         transferFile,
                         onErrorCallback
