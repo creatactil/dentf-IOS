@@ -130,7 +130,7 @@
     <li data-icon="bullets" ><a href="#" onClick="mostrarDatos()" style="text-shadow:none">Registro</a></li>
     <li data-icon="mail" ><a onClick="crearLista()" style="text-shadow:none">Circulares</a></li>
     <li data-icon="star"><a onClick="listafavorito()" style="text-shadow:none">Favorito</a></li>
-    <li data-icon="navigation"><a target="" href="" class="web" onClick="listaweb()" style="text-shadow:none">Web</a></li>
+    <li data-icon="navigation"><a href="#page15" data-transition="slide" style="text-shadow:none">Web</a></li>
     <li data-icon="info"><a href="#page5" data-transition="slide" style="text-shadow:none">Ayuda</a></li>
     <li data-icon="info"><a href="#page8" data-transition="slide" style="text-shadow:none">Contacto</a></li>
     <li data-icon="delete"><a href="#pageone" data-rel="close" style="text-shadow:none">Cerrar menú</a></li>
@@ -165,7 +165,7 @@ App Diseñada por creaTáctil S.L.
     <li><a href="#" data-role="button" onClick="mostrarDatos()" data-icon="bullets" style="background-image:url(imgportada/cabecera.png)">Registro</a></li>
     <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;" >Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
-    <li><a target="_blank" href="" data-role="button" class="web" onClick="listaweb()" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
+    <li><a href="#page15" data-role="button" data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
 	</div>
    
@@ -348,7 +348,7 @@ App Diseñada por creaTáctil S.L.
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>
     <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
-    <li><a target="_blank" href="" data-role="button" class="web" onClick="listaweb()" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
+    <li><a href="#page15" data-role="button" data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
 	</div>
  
@@ -380,7 +380,7 @@ App Diseñada por creaTáctil S.L.
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home">Inicio</a></li>
     <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star">Favoritos</a></li>
-    <li><a target="_blank" href="http://www.coftenerife.org/web/farmacia/index.asp" data-role="button" onClick="" data-icon="navigation">Web</a></li> 
+    <li><a  href="#page15" data-role="button"  data-transition="slide" data-icon="navigation">Web</a></li> 
     </ul>
 	</div>
  
@@ -469,7 +469,7 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
     <li><a href="#page1" data-role="button" data-transition="slide" onClick="globo()" data-icon="home" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>
     <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;">Circulares</a></li>
     <li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
-    <li><a target="_blank" href="" data-role="button" class="web" onClick="listaweb()" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
+    <li><a target="_blank" href="#page15" data-role="button" data-transition="slide" data-icon="navigation" style="background-image:url(imgportada/cabecera.png)">Web</a></li>
     </ul>
 	</div>
  
@@ -541,7 +541,56 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
 </div>
 <!---------------------------- FIN PAGINA 14 --------------------------------> 
 
+<!---------------------------------  PAGE 15  ------------------------------->
+<div data-role="page" data-theme="a" id="page15">
+		<div style="height:20px; visibility:hidden"> </div> 
+       <div data-role="header" style="background-image:url(imgportada/cabecera.png)">
+      <a class="ui-btn-left" data-mini="true" href="#page1" data-role="button" data-transition="slide" data-icon="carat-l" data-iconpos="notext" data-theme="a"></a>
+       <h1>WEB</h1>
+        
+      </div>
+	
+      <div data-role="main" class="contenedorredes" >
+      
+      
+      
+      	<div class="ui-grid-a" style="margin-top:10%" >
+        	<div class="ui-block-a">
+            	<center><a onClick="window.open('https://www.dentef.es/','_blank');"><img src="imagenes/web.png" width="80" height="80"/></a></center>          
+            </div>
+            <div class="ui-block-b">        
+            	<center><a onClick="window.open('https://twitter.com/dentistas_tf','_blank');"><img src="imagenes/twitter.png" width="80" height="80" style="margin-top:-5px;"/></a></center> 
+            </div>          
+        </div>
+        <div class="ui-grid-a" style="margin-top:10%;">
+        	<div class="ui-block-a">
+            	<center>
+                <a href="" onClick="window.open('https://www.facebook.com/dentistastenerife','_blank');"><img src="imagenes/face.png" width="78" height="78"/></a>
+            	</center>                          
+          </div>
+            <div class="ui-block-b">        
+            	<center><a onClick="window.open('https://plus.google.com/109159048434647991027/about','_blank');"><img src="imagenes/googleplus.png" width="78" height="78"/></a></center>
+          </div>          
+        </div>
+        
+      		
+      </div>
 
+      <!--footer-->  
+     <!--footer-->  
+    <div data-role="footer" data-theme="a" data-position="fixed" >
+    	<div data-role="navbar" >
+   			 <ul>
+    			<li><a href="#" data-role="button" onClick="mostrarDatos()" data-icon="bullets" style="background-image:url(imgportada/cabecera.png)">Registro</a></li>
+   				 <li><a href="#" data-role="button" onClick="crearLista()" data-icon="mail" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;" >Circulares</a></li>
+    			<li><a href="#" data-role="button" onClick="listafavorito()" data-icon="star" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>
+    			<li><a href="#page5" data-role="button" data-transition="slide" data-icon="info" style="background-image:url(imgportada/cabecera.png)">Ayuda</a></li>
+    		</ul>
+		</div>
+    </div>
+  
+</div> 
+<!---------------FIN PAGE 15----------------------------------------------------------------> 
 
   
 </body>
