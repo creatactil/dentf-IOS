@@ -160,7 +160,7 @@ function contador(registro){
 	
 	
 	$.ajax({
-		url: 'http://app.dentf.com/php/contador.php',
+		url: 'http://app.dentef.com/php/contador.php',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
