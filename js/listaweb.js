@@ -16,7 +16,7 @@ function listaweb(data) {
 			
 		var web = item.web;
 			
-		window.open(web,'_blank','location=no','closebuttoncaption=Return');	
+		window.open(web,'_system','location=no','closebuttoncaption=Return');	
 				 
 		});
 		
@@ -31,6 +31,6 @@ function abrirweb(ruta){
 	
 	var xruta = ruta;
 	
-	window.open(xruta,'_blank','location=no','closebuttoncaption=Return');
+	window.open(xruta,'_system','location=no','closebuttoncaption=Return');
 	
 	}
