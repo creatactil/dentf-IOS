@@ -2,8 +2,8 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.dentef.app"
-		versionCode="102"
-		version = "1.0.2">
+		versionCode="103"
+		version = "1.0.3">
 		<name>DENTISTAS SC Tenerife</name>
 		<description>
 			COLEGIO OFICIAL  DE DENTISTAS DE SC DE TENERIFE
@@ -11,7 +11,7 @@
 		<author href="http://www.creatactil.com"  email="info@creatactil.com">Jose Gines Venazco</author>
 		
 		<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-		<string>102</string>
+		<string>103</string>
 		</gap:config-file>
 
 		
