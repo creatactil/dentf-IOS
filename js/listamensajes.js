@@ -267,7 +267,7 @@ function descargarArchivo(nombre){
 function abrirfichero(ruta3){
 	
 	console.log(ruta3);
-	window.open (ruta3, '_blank', 'location = yes, closebuttoncaption = done, enableViewportScale = yes');
+	window.open (ruta3, '_blank', 'location=yes,closebuttoncaption=done,enableViewportScale=yes');
 	
 	
 	}
