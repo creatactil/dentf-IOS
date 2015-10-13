@@ -65,7 +65,7 @@ function listafavorito() {
 			'<div data-role="page"  id="id' + index + '" data-url="id' + index + '" data-theme="a" >' +
 					'<div style="height:20px; visibility:hidden"> </div> '+
 					'<div data-role="header" data-theme="b" style="background-image:url(imgportada/cabecera.png)">' + 
-					'<a href="#page14" onClick="listafavorito()" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a" class="ui-link ui-btn-left ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Atrás</span><span class="ui-icon ui-icon-back ui-icon-shadow"></span></span></a>'+
+					'<a href="" onClick="listafavorito()" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a" class="ui-link ui-btn-left ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Atrás</span><span class="ui-icon ui-icon-back ui-icon-shadow"></span></span></a>'+
 					'<h1>' + item.titulo + '</h1>' +
 					'</div>' +
 					
@@ -84,7 +84,7 @@ function listafavorito() {
 								  '<br>'+
 								  '<br>'+
 								  '<br>'+
-								  '<a href="#page11" style="color:#900"  data-rel="dialog" onClick="textofirma(\''+item.registro+'\' ), textofirma3(\''+item.cial+'\' ), textofirma4(\''+item.codigo+'\' ) ">'+item.firma+'</a>'+
+								  '<a href="#page11" style="color:#900"  data-transition="pop" onClick="textofirma(\''+item.registro+'\' ), textofirma3(\''+item.cial+'\' ), textofirma4(\''+item.codigo+'\' ) ">'+item.firma+'</a>'+
 								   
                                   '</div>' +
                                 '</p>' +

@@ -45,7 +45,7 @@ function crearLista() {
 		'<p style="margin-left:60px; padding:0; color:'+verde+'; font-size: 0.7em ">'+'Nº Registro:  '+item.registro+'<br>'+
     	''+'Fecha: '+''+item.fecha+'</p>'+
 		
-       '<a href="#" data-rel="popup" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-delete ui-btn-a" onClick="borrarMensaje(\''+item.id_aux+'\' )" style="height: 62px;">'+
+       '<a href="#" data-position-to="window" data-transition="pop" aria-haspopup="true" aria-owns="purchase" aria-expanded="false" class="ui-btn ui-btn-icon-notext ui-icon-delete ui-btn-a" onClick="borrarMensaje(\''+item.id_aux+'\' )" style="height: 62px;">'+
 		'</a>'+
     	'</li>'
 
@@ -57,7 +57,7 @@ function crearLista() {
 			'<div data-role="page"  id="id_' + index + '" data-url="id_' + index + '" data-theme="a" >' +
 					'<div style="height:20px; visibility:hidden"> </div> '+
 					'<div data-role="header" data-theme="b" style="background-image:url(imgportada/cabecera.png)">' + 
-					'<a href="#page4" onClick="crearLista()" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a" class="ui-link ui-btn-left ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Atrás</span><span class="ui-icon ui-icon-back ui-icon-shadow"></span></span></a>'+
+					'<a href="" onClick="crearLista()" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a" class="ui-link ui-btn-left ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Atrás</span><span class="ui-icon ui-icon-back ui-icon-shadow"></span></span></a>'+
 					'<h1>' + item.titulo + '</h1>' +
 					
 					'</div>' +
@@ -72,7 +72,9 @@ function crearLista() {
 					'<br>'+
                     '<a href="" onclick="descargarArchivo(\''+item.enlace+'\')" >'+item.enlace+'</a>'+
 								  '<br>'+
-								  '<a href="#page11" style="color:#006837"  data-rel="dialog" onClick="textofirma(\''+item.registro+'\' ), textofirma2(\''+item.titulo+'\' )">'+item.firma+'</a>'+
+								  '<br>'+
+								  '<br>'+
+								  '<a href="#page11" style="color:#006837"  data-transition="pop" onClick="textofirma(\''+item.registro+'\' ), textofirma2(\''+item.titulo+'\' )">'+item.firma+'</a>'+
 								   '<br>'+
 								  '<br>'+
 								  '<center>'+
