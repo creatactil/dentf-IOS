@@ -67,7 +67,7 @@ h1{
 </style>
 <script src="js/borrafavorito.js"></script>
 <script src="js/borrarmensaje.js"></script>
-<!--<script src="js/cargaweb.js"></script> -->
+<script src="js/desconectar.js"></script>
 
 <script src="js/favorito.js"></script>
 <script src="js/firma.js"></script>
@@ -159,7 +159,7 @@ App Diseñada por creaTáctil S.L.
         
       <label style="font-weight: bold; font-size: small; color: #fff; text-align: center; margin-top:6px;margin-left:25px">COLEGIO OFICIAL DE DENTISTAS</label> 
     <label style="font-weight: bold; font-size: x-small; color: #fff; text-align: center; margin-top:-5px; margin-left:25px">PROVINCIA DE SANTA CRUZ DE TENERIFE</label>
-        
+        <a href="" data-role="button" class="ui-btn-right" data-mini="true" data-icon="power" onClick="desconectar()" data-iconpos="notext"></a>
     </div >
     
     <div data-role="main" class="ui-content" style="margin:0; padding:0; position:fixed; width:100%">
@@ -189,7 +189,7 @@ App Diseñada por creaTáctil S.L.
 	<div style="height:20px; visibility:hidden"> </div> 
 	 <div data-role="header" data-theme="a" style="background-image:url(imgportada/cabecera.png)">
     
-     <a href="#" data-role="button" data-transition="slide" data-icon="carat-l" data-iconpos="notext" data-rel="back" data-theme="a"></a> 
+     <a href="#" data-role="button" data-transition="slide" data-icon="carat-l" data-iconpos="notext" onClick="inicio()" data-theme="a"></a> 
 		<h1>REGISTRO</h1>
        
 	</div>
@@ -505,7 +505,7 @@ La finalidad de la cesión es actualizar la base de datos del Colegio Oficial de
 	   	    
             <center>
             <div data-role="controlgroup" data-type="horizontal">
-             <a href="#" data-role="button" data-rel="back" data-icon="back">Rechazar</a>
+             <a href="#page1" data-role="button"  data-icon="back">Rechazar</a>
 			<a href="#" data-role="button" onClick="firma()" data-icon="check">Aceptar</a>
             </div>
             </center>

@@ -6,7 +6,6 @@ function init(){
 	$("#pa2").val(localStorage.pass);
 	//$("#pa2").focus();
 	
-	
 	globo();
 	onLoad();
 	
@@ -20,7 +19,10 @@ function init(){
 		
 		}else{
 	inicio();
+	
 		}
+		
+		
 	
 	}
 	
