@@ -51,13 +51,12 @@ function loginVal2(){
 				
 				
 			});
-			init();
-			comprobarid();
+			
 			}
 		},
 
 });
-
+setTimeout('comprobarid()',8000);
 }
 
 function comprobarid(){
@@ -65,8 +64,8 @@ function comprobarid(){
 	var xregid = $("#regId").val();
 	var xnumero = localStorage.numero;
 	
-	
-	$.ajax({
+	if ((xregid != "") && (xnumero != "")){
+		$.ajax({
 		url: 'http://app.dentef.com/php/comprobarid.php',
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
@@ -76,5 +75,5 @@ function comprobarid(){
 		
 			});
 	
-	
+	}
 	}

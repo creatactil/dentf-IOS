@@ -2,8 +2,8 @@
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
 		id        = "com.dentef.app"
-		versionCode="106"
-		version = "1.0.6">
+		versionCode="107"
+		version = "1.0.7">
 		<name>DENTISTAS SC Tenerife</name>
 		<description>
 			COLEGIO OFICIAL  DE DENTISTAS DE SC DE TENERIFE
@@ -11,13 +11,16 @@
 		<author href="http://www.creatactil.com"  email="info@creatactil.com">Jose Gines Venazco</author>
 		
 		<gap:config-file platform="ios" parent="CFBundleShortVersionString">
-		<string>106</string>
+		<string>107</string>
 		</gap:config-file>
 
-		
-		<preference name="phonegap-version" value="3.7.0" />
-		<preference name="orientation" value="default" />
-		<preference name="fullscreen" value="true" />
+		<preference name="permissions"                value="none"/>
+
+    <!-- Customize your app and platform with the preference element. -->
+	
+		<preference name="phonegap-version" value="cli-5.4.1" />
+		<preference name="orientation" value="portrait" />
+		<preference name="fullscreen" value="false" />
 		<preference name="target-device" value="universal" />
 		<preference name="webviewbounce" value="true" />
 		<preference name="prerendered-icon" value="true" />
@@ -35,8 +38,6 @@
 		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
 		<preference name="HideKeyboardFormAccessoryBar" value="true" />
 		<preference name="SuppressesIncrementalRendering" value="true" />
-		<preference name="android-minSdkVersion" value="8" />
-		<preference name="android-installLocation" value="internalOnly" />
 		<preference name="SplashScreenDelay" value="8000" />
 		<preference name="ErrorUrl" value=""/>
 		<preference name="BackgroundColor" value=""/>
@@ -45,41 +46,38 @@
 		<preference name="LoadingDialog" value=",Cargando....."/> 
 		<preference name="LoadUrlTimeoutValue" value="20000" />
 		<preference name="disable-cursor" value="true" />
-		<gap:platform name="ios" />
+		<preference name="EnableViewportScale" value="true" />
+  
+   		<gap:platform name="ios" />     
+  
+     <!-- Plugins -->
+		
+		<plugin name="com.phonegap.plugins.pushplugin" source="pgb" spec="2.5.0" />
+		<plugin name="hu.dpal.phonegap.plugins.uniquedeviceid" source="pgb" spec="1.2.0" />
+		<gap:plugin name="org.apache.cordova.console" />
+		<gap:plugin name="org.apache.cordova.device" />
+		<gap:plugin name="org.apache.cordova.device-motion" />
+		<gap:plugin name="org.apache.cordova.device-orientation" />
+		<gap:plugin name="org.apache.cordova.dialogs" />
+		<gap:plugin name="org.apache.cordova.file" />
+		<gap:plugin name="org.apache.cordova.file-transfer" />
+		<gap:plugin name="org.apache.cordova.globalization" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" />
+		<gap:plugin name="org.apache.cordova.network-information" />
+		<gap:plugin name="org.apache.cordova.splashscreen" />
+		<gap:plugin name="org.apache.cordova.vibration" />
+		<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+
+   
 		<feature name="http://api.phonegap.com/1.0/file"/>
 		<feature name="http://api.phonegap.com/1.0/media"/>
 		<feature name="http://api.phonegap.com/1.0/network"/>
 		<feature name="http://api.phonegap.com/1.0/notification"/>
 		<feature name="http://api.phonegap.com/1.0/device"/>
 		
-		
-		<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
-		<gap:plugin name="org.apache.cordova.battery-status" version="0.2.11" />
-		<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
-		<gap:plugin name="org.apache.cordova.console" version="0.2.11" />
-		<gap:plugin name="org.apache.cordova.contacts" version="0.2.13" />
-		<gap:plugin name="org.apache.cordova.device" version="0.2.12" />
-		<gap:plugin name="org.apache.cordova.device-motion" version="0.2.10" />
-		<gap:plugin name="org.apache.cordova.device-orientation" version="0.3.9" />
-		<gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
-		<gap:plugin name="org.apache.cordova.file" version="1.3.1" />
-		<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
-		<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" />
-		<gap:plugin name="org.apache.cordova.globalization" version="0.3.1" />
-		<gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
-		<gap:plugin name="org.apache.cordova.media" version="0.2.13" />
-		<gap:plugin name="org.apache.cordova.media-capture" version="0.3.3" />
-		<gap:plugin name="org.apache.cordova.network-information" version="0.2.12" />
-		<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
-		<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
-		
-				
-		<plugin name="File" value="CDVFile" />
-		<plugin name="FileTransfer" value="CDVFileTransfer" />
-		<plugin name="InAppBrowser" value="CDVInAppBrowser" />
-		<plugin name="Media" value="CDVSound" />
-		<plugin name="Notification" value="CDVNotification" />
-		<plugin name="SplashScreen" value="CDVSplashScreen" />
+		<feature name="PushPlugin">
+  			<param name="ios-package" value="PushPlugin" />
+		</feature>
 		
 		<icon src="imagenes/29.png" gap:platform="ios" width="29" height="29" />
 		<icon src="imagenes/40.png" gap:platform="ios" width="40" height="40" />

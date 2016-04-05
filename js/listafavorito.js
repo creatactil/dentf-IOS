@@ -43,7 +43,7 @@ function listafavorito() {
 						
 			'<li class="ui-li-has-alt ui-li-has-thumb ui-first-child ui-last-child" style="height: 60px"><a href="#" class="ui-btn" onclick="changePage(id' + index + '), contador(\''+registro+'\');" style="height: 60px; padding:0; " >'+
 			'<img src="imagenes/icono.jpg" class="ui-li-thumb" style="margin-top: 5px; margin-left: 5px; height: 50px">'+
-		'<h2 style="margin-left:60px; margin-top:2px; color:'+tema+'" >'+item.titulo+'</h2>'+
+		'<h2 style="margin-left:60px; margin-top:5px; font-size:12px; color:'+tema+'" >'+item.titulo+'</h2>'+
 		'<p style="margin-left:60px; padding:0; color:'+verde+'; font-size: 0.7em ">'+'Nº Registro:  '+item.registro+'<br>'+
     	''+'Fecha: '+''+item.fecha+'</p>'+
 		
@@ -105,7 +105,7 @@ function listafavorito() {
     '<div data-role="navbar" class="ui-navbar" role="navigation">'+
     '<ul class="ui-grid-c">'+
     '<li class="ui-block-a"><a href="#page1" data-transition="slide" data-role="button" onclick="globo()" data-icon="home" class="ui-link ui-btn ui-icon-home ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-image:url(imgportada/cabecera.png)">Inicio</a></li>'+
-    '<li class="ui-block-b"><a href="#" data-role="button" onclick="crearLista()" data-icon="mail" class="ui-link ui-btn ui-icon-mail ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-image:url(imgportada/cabecera.png)"><img src="" class="globo" style="float:left; width:15px;" >Circulares</a></li>'+
+    '<li class="ui-block-b"><a href="#" data-role="button" onclick="crearLista()" data-icon="mail" class="ui-link ui-btn ui-icon-mail ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-image:url(imgportada/cabecera.png)"><img  class="globo"  >Circulares</a></li>'+
     '<li class="ui-block-c"><a href="#" data-role="button" onclick="listafavorito()" data-icon="star" class="ui-link ui-btn ui-icon-star ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-image:url(imgportada/cabecera.png)">Favoritos</a></li>'+
     '<li class="ui-block-d"><a href="#page5" data-role="button" onclick="" data-icon="info" class="ui-link ui-btn ui-icon-info ui-btn-icon-top ui-shadow ui-corner-all" role="button" style="background-image:url(imgportada/cabecera.png)">Ayuda</a></li>'+
     '</ul>'+
