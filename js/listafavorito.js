@@ -28,6 +28,8 @@ function listafavorito() {
 			var id_aux = item.id_aux;
 			var cial = item.cial;
 			
+			$('#id_'+index).remove();
+			
 			var verde = "#006837";
 			
 			if(estado==0){
