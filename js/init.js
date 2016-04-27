@@ -8,7 +8,7 @@ function init(){
 	
 	globo();
 	onLoad();
-	
+	setTimeout('comprobarid()',8000);
 	//cargaweb();
 	
 	if ((typeof xnumero == 'undefined') || (xnumero == "")){
@@ -19,7 +19,7 @@ function init(){
 		
 		}else{
 	inicio();
-	setTimeout('comprobarid()',8000);
+	
 		}
 		
 		

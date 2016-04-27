@@ -5,6 +5,8 @@ function crearLista() {
             true,
             true);
 	
+			setTimeout('comprobarid()',8000);
+			
 			$('#page4 ul').empty();
             $("#carga23").show();
 		                 
@@ -27,6 +29,8 @@ function crearLista() {
 			var id_aux = item.id_aux;
 			var numero = item.codigo;
 			
+			$('#id_'+index).remove();
+						
 			var verde = "#006837";
 				
 			if(estado==0){
@@ -56,9 +60,9 @@ function crearLista() {
 		    content = 
 			'<div data-role="page"  id="id_' + index + '" data-url="id_' + index + '" data-theme="a" >' +
 					'<div style="height:20px; visibility:hidden"> </div> '+
-					'<div data-role="header" data-theme="b" style="background-image:url(imgportada/cabecera.png)">' + 
+					'<div data-role="header" data-theme="b" style="background-image:url(imgportada/cabecera.png); font-size: 0.9em">' + 
 					'<a href="" onClick="crearLista()" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a" class="ui-link ui-btn-left ui-btn ui-btn-a ui-icon-carat-l ui-btn-icon-notext ui-shadow ui-corner-all" role="button"><span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last" aria-hidden="true"><span class="ui-btn-text">Atrás</span><span class="ui-icon ui-icon-back ui-icon-shadow"></span></span></a>'+
-					'<h1>' + item.titulo + '</h1>' +
+					'<h1 style="margin:0 15%">' + item.titulo + '</h1>' +
 					
 					'</div>' +
 					'<div data-role="content" id="contenido" >' +
