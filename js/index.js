@@ -89,7 +89,7 @@ var app = {
               // NOTIFICACION!!!
               //alert('message = '+e.message+' msgcnt = '+e.msgcnt);
 			  globo();
-			  crearLista();
+			  //crearLista();
             break;
  
             case 'error':

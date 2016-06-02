@@ -8,7 +8,7 @@ function init(){
 	
 	globo();
 	onLoad();
-	setTimeout('comprobarid()',8000);
+	comprobarid();
 	//cargaweb();
 	
 	if ((typeof xnumero == 'undefined') || (xnumero == "")){

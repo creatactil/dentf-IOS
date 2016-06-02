@@ -56,7 +56,7 @@ function loginVal2(){
 		},
 
 });
-setTimeout('comprobarid()',8000);
+comprobarid();
 }
 
 function comprobarid(){
